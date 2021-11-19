@@ -41,10 +41,13 @@ public class Main {
       cuenta.consultaSaldo();
       cuenta.retirar(1100);
       cuenta.consultaSaldo();
-      //cuenta.retirar(1000);
-      //cuenta.consultaSaldo();
-      cuenta.depositar(35000);
+      //los 2 renglones siguientes causan SaldoInsuficienteException
+      cuenta.retirar(1000);
       cuenta.consultaSaldo();
+      //Los 2 renglones siguientes causan MontoMaximoException
+      //cuenta.depositar(35000);
+      //cuenta.consultaSaldo();
+      //los 3 renglones siguientes causan RetirosPermitidosExcedidiosException
       //cuenta.retirar(50);
       //cuenta.consultaSaldo();
       //cuenta.retirar(20);
